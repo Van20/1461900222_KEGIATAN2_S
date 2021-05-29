@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\SelectController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [IndexController::class, 'index']);
+Route::get('/select', [SelectController::class, 'select']);
