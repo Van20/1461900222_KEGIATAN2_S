@@ -96,19 +96,73 @@
                 <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
                     <div class="container">
                         <div class="page-header-content pt-4">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-auto mt-4">
-                                    <h1 class="page-header-title">
-                                        <div class="page-header-icon"><i data-feather="activity"></i></div>
-                                        Tugas Kegiatan 2
-                                    </h1>
-                                    <div class="page-header-subtitle">Praktikum Pengembangan Teknologi Web</div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </header>
                 <!-- Main page content-->
+                <div class="container mt-n10">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4>Select Like</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="source-data">
+                                <span class="source red">*Select table siswa dengan nama like 'ABI%'</span>
+                            </div>
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>NIS</th>
+                                            <th>Nama</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no=1 ?>
+                                        @foreach ($dataSiswa1 as $siswa)
+                                        <tr>
+                                            <td>{{ $no++ }}</td>
+                                            <td>{{ $siswa->nis }}</td>
+                                            <td>{{ $siswa->nama }}</td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="source-data">
+                                <span class="source red">*Select table siswa dengan nama like 'NOVI%'</span>
+                            </div>
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>NIS</th>
+                                            <th>Nama</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no=1 ?>
+                                        @foreach ($dataSiswa2 as $siswa)
+                                        <tr>
+                                            <td>{{ $no++ }}</td>
+                                            <td>{{ $siswa->nis }}</td>
+                                            <td>{{ $siswa->nama }}</td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
             <footer class="footer mt-auto footer-light">
                 <div class="container-fluid">
