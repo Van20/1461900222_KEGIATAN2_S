@@ -49,7 +49,7 @@
 
 <body class="nav-fixed">
     <nav class="topnav navbar navbar-expand shadow navbar-light bg-white" id="sidenavAccordion">
-        <a class="navbar-brand" href="{{'/'}}">Tugas Kegiatan 2</a>
+        <a class="navbar-brand" href="{{'/'}}">Praktikum PTW</a>
         <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 mr-lg-2" id="sidebarToggle" href="#"><i
                 data-feather="menu"></i></button>
 
@@ -67,7 +67,7 @@
 
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIndihome"
                             aria-expanded="false" aria-controls="collapseIndihome">
-                            Data
+                            Menu Select
                             <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse" id="collapseIndihome" data-parent="#accordionSidenav">
@@ -76,13 +76,13 @@
                                     Select
                                 </a>
                                 <a class="nav-link" href="{{'/selectlike'}}">
-                                    Select like
+                                    Select Like
                                 </a>
                                 <a class="nav-link" href="{{'/selectjoin'}}">
-                                    Select join
+                                    Select Join
                                 </a>
                                 <a class="nav-link" href="{{'/selectjoinwithwhere'}}">
-                                    Select join dengan where
+                                    Select Join With Where
                                 </a>
                             </nav>
                         </div>
@@ -169,9 +169,9 @@
                     <div class="row">
                         <div class="col-md-6 small">Copyright &#xA9; Tugas Kegiatan 2 - Praktikum Pengembangan Teknologi Web</div>
                         <div class="col-md-6 text-md-right small">
-                            <a href="#!">Privacy Policy</a>
+                            <a href="#!">Universitas 17 Agustus 1945</a>
                             &#xB7;
-                            <a href="#!">Terms &amp; Conditions</a>
+                            <a href="#!">Surabaya</a>
                         </div>
                     </div>
                 </div>
