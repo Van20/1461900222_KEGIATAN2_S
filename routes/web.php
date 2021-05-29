@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/select', [SelectController::class, 'select']);
 Route::get('/selectlike', [SelectController::class, 'selectlike']);
+Route::get('/selectjoin', [SelectController::class, 'selectjoin']);

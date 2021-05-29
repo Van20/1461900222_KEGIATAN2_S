@@ -78,7 +78,7 @@
                                 <a class="nav-link" href="{{'/selectlike'}}">
                                     Select like
                                 </a>
-                                <a class="nav-link" href="selectjoin.html">
+                                <a class="nav-link" href="{{'/selectjoin'}}">
                                     Select join
                                 </a>
                                 <a class="nav-link" href="selectjoinwithwhere.html">
