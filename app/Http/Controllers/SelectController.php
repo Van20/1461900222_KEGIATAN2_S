@@ -47,4 +47,18 @@ class SelectController extends Controller
 
         return view('selectjoin0222', ['joindataSiswa' => $joindataSiswa]);
     }
+
+    public function selectjoinwithWhere()
+    {
+        $dataSiswa = DB::table('siswa')
+            ->leftjoin('kelas', 'siswa.id_kelas', '=', 'kelas.id_kelas')
+            ->where([
+                ['kelas.kelas', '=', 'XI'],
+                ['siswa.nama', 'like', '%A%']
+            ])
+            ->orderBy('nis', 'asc')
+            ->get();
+
+        return view('selectjoinwithwhere0222', ['dataSiswa' => $dataSiswa]);
+    }
 }

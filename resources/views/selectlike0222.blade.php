@@ -81,7 +81,7 @@
                                 <a class="nav-link" href="{{'/selectjoin'}}">
                                     Select join
                                 </a>
-                                <a class="nav-link" href="selectjoinwithwhere.html">
+                                <a class="nav-link" href="{{'/selectjoinwithwhere'}}">
                                     Select join dengan where
                                 </a>
                             </nav>
@@ -167,7 +167,7 @@
             <footer class="footer mt-auto footer-light">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 small">Copyright &#xA9; Dashboard BPP 2020</div>
+                        <div class="col-md-6 small">Copyright &#xA9; Tugas Kegiatan 2 - Praktikum Pengembangan Teknologi Web</div>
                         <div class="col-md-6 text-md-right small">
                             <a href="#!">Privacy Policy</a>
                             &#xB7;

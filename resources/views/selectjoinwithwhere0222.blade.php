@@ -104,11 +104,11 @@
                 <div class="container mt-n10">
                     <div class="card mb-4">
                         <div class="card-header">
-                            <h4>Select with Join Table</h4>
+                            <h4>Select with Join Where Table</h4>
                         </div>
                         <div class="card-body">
                             <div class="source-data">
-                                <span class="source red">*Select table and join other table</span>
+                                <span class="source red">*Select table and join other table with where</span>
                             </div>
                             <br>
                             <div class="table-responsive">
@@ -119,22 +119,16 @@
                                             <th>NIS</th>
                                             <th>Nama</th>
                                             <th>Kelas</th>
-                                            <th>Tanggal</th>
-                                            <th>Absen</th>
-                                            <th>Semester</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php $no=1 ?>
-                                        @foreach ($joindataSiswa as $join)
+                                        @foreach ($dataSiswa as $data)
                                         <tr>
                                             <td>{{ $no++ }}</td>
-                                            <td>{{ $join->nis }}</td>
-                                            <td>{{ $join->nama }}</td>
-                                            <td>{{ $join->kelas }}</td>
-                                            <td>{{ $join->tanggal }}</td>
-                                            <td>{{ $join->absen }}</td>
-                                            <td>{{ $join->status }}</td>
+                                            <td>{{ $data->nis }}</td>
+                                            <td>{{ $data->nama }}</td>
+                                            <td>{{ $data->kelas }}</td>
                                         </tr>
                                         @endforeach
                                     </tbody>
